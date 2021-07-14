@@ -81,6 +81,15 @@ header{
 /*-----------
     Banner Start
     --------- */
+.header_banner:hover .banner_image img{
+    
+    transform: rotate(20deg) scale(1.1);
+    /* transform:  */
+}
+.header_banner:hover .banner_text{
+    
+    transform: scale(1.2);
+}
 .header_banner{
     display: flex;
     justify-content: space-between;
@@ -89,7 +98,7 @@ header{
 .banner_image img{
     width: 555px;
     height: 446px;
-
+    transition: transform .5s ease-out;
     
 }
 .banner_text{
@@ -101,6 +110,7 @@ header{
     font-size: 4em;
     line-height: 80px;
     font-family: Poppins;
+    transition: transform .5s ease-in-out;
 }
 .banner_btn{
     margin-top: 4em;
@@ -299,3 +309,6 @@ footer{
     font-size: 18px;
     line-height: 24px;
 }
+/*-----------
+    Footer End
+    --------- */

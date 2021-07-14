@@ -1,0 +1,12 @@
+@media only screen and (max-height:480px) {
+    body{
+        width: 100%;
+    }
+    .navbar{
+        display: hidden;
+    }
+    header{
+        background-color: #ff032d;
+    }
+    
+}
