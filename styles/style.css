@@ -4,23 +4,39 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Poppins;
 }
 body{
-    width: 1360px;
+    max-width: 1375px;
+    
 }
-/* a{
+a{
+    color: #FFFFFF;
     text-decoration: none;
-} */
+    
+}
+.watch_btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #E02C6D;
+    font-weight: 500;
+    width: 10.5em;
+    height: 2.5em;
+    padding: 0.65em 1.5em;
+}
 /*-----------
-    Header
+    Header Start
     --------- */
 header{
-    height: 650px;
-    padding: 42px 120px 85px 156px;
+    /* height: 80vh; */
+    padding: 3em 7em 3em 8em;
     background-color: #2D25A0;
     
 }
-
+/*-----------
+    NavBar Start
+    --------- */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -28,34 +44,43 @@ header{
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1em;
+    /* line-height: 24px; */
     color: #FFFFFF;
-    margin-bottom: 100px;
+    margin-bottom: 6.5em;
 }
 .nav_list>ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    width: 720px;
+    /* width: 720px; */
+    width: 35em;
+
 }
-.nav_list>ul>li>a{
+/* .nav_list>ul>li>a{
     color: #FFFFFF;
     text-decoration: none;
 
-}
+} */
 .login{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #E02C6D;
-    padding: 10px 24px;
+    /* padding: 10px 24px; */
+    padding: 0.5em 1.5em;
 }
 .login i{
     margin-right: 8px;
 }
+/*-----------
+    NavBar End
+    --------- */
 
+/*-----------
+    Banner Start
+    --------- */
 .header_banner{
     display: flex;
     justify-content: space-between;
@@ -68,94 +93,194 @@ header{
     
 }
 .banner_text{
-    width: 485px;
+    /* width: 485px; */
+    width: 7.5em;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 64px;
+    /* font-size: 64px; */
+    font-size: 4em;
     line-height: 80px;
     font-family: Poppins;
-    font-style: normal;
 }
 .banner_btn{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #E02C6D;
-    padding: 10px 24px;
-    width: 168px;
-    height: 44px;
-    color: #FFFFFF;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-decoration: none;
-    margin-top: 37px;
+    margin-top: 4em;
 }
+/*-----------
+    Banner Start
+    --------- */
+/*-----------
+    Header End
+    --------- */
 
+/*-----------
+    Main Start
+    --------- */
+main{
+    margin-top: 4.5em;
+    /* padding: 0px 5em; */
+}
+/*-----------
+    Section Players Start
+    --------- */
 .players{
-    margin: 70px 210px 165px 180px;
-
+    margin-bottom: 10.5em;
+    padding: 0px 5em;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 30px 30px;
+    grid-gap: 2em;
 }
+
 .player{
     width: 330px;
     height: 475px;
-    padding: 15px;
+    /* padding: 15px; */
+    padding: 1em;
     box-shadow: 0px 0px 40px 0px #00000026;
 
 }
-.player .player_img img{
+.player_img{
+    height: 16.25em;
+}
+.player_img img{
     width: 100%;
-    height: 256px;
+    height: 100%;
 }
 .player_info{
-    margin-top: 16px;
-    margin-right: 15px;
+    /* margin-top: 16px; */
+    margin-top: 1em;
+    /* margin-right: 15px; */
+    margin-right: 1em;
     font-family: Poppins;
-    font-style: normal;
 }
 .player_info h3{
     color: #18191F;
     font-weight: 700;
-    font-size: 28px;
-    line-height: 40px;
-    margin-bottom: 10px;
+    /* font-size: 28px; */
+    font-size: 1.75em;
+    /* margin-bottom: 10px; */
+    margin-bottom: .7em;
 }
 .player_info p{
     color: #6C6C6C;
-    font-size: 16px;
-    line-height: 26px;
+    /* font-size: 16px; */
+    font-size: 1em;
+    /* line-height: 26px; */
+    line-height: 2em; 
 }
 
+/*-----------
+    Section Player End
+    --------- */
+
+/*-----------
+    Section Highlight Start
+    --------- */
+
 .highlights{
-    margin-left: 182px;
-    margin-right: 156px;
     display: flex;
     align-items: center;
-    /* background-color: red; */
+    justify-content: space-between;
+    font-family: Poppins;
+    padding: 0 2em 0 5em;
+    margin-bottom: 10.5em;
+}
+.highlight_text{
+    /* width: 469px; */
+    width: 30em;
+}
+.highlight_text h3{
+    
+    margin-bottom: 1em;
+    font-weight: 700;
+    /* font-size: 48px; */
+    font-size: 3em;
+    line-height: 60px;
+
 }
 .highlight_img img{
     width: 450px;
     height: 340px;
 }
+.highlight_text a{
+    margin-top: 1.5em;
+}
+/*-----------
+    Section Highlight End
+    --------- */
+/*-----------
+    Section Newsletter Start
+    --------- */
+    .newsletter{
+        /* To Do center */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5em; 
+    }
+    .newsletter_msg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+        /* padding: 4em; */
+        padding: 4em 4em 2em 4em;
+        background-color: #2D25A0;
+        color: white;
+        font-family: Poppins;
+        border-radius: 2em;
+    }
+    .newsletter_msg h3{
+        margin-bottom: .5em;
+        font-size: 3em;
+        font-weight: 500;
+    }
+    .newsletter_form{
+        width: 100%;
+        margin-top: 1em;
+        padding: 2em;
+    }
 
-
+    .newsletter_form input{
+        
+        font-size: 1em;
+        
+        padding: 1em;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: 2px solid rgb(12, 106, 194);
+        box-shadow: inset 1px 1px 9px 2px rgb(37 40 160 / 51%);
+    }
+    .newsletter_form a{
+        margin: 5px;
+        background-color: #E02C6D;
+        font-weight: 500;
+        width: 10.5em;
+        height: 2.5em;
+        padding: 0.65em 1.5em;
+        border-radius: .3em;
+    }
+/*-----------
+    Section Newsletter End
+    --------- */
+/*-----------
+    Menu End
+    --------- */
+/*-----------
+    Footer Start
+    --------- */
 footer{
-    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 10.5em;
+    margin-bottom: 4em;
+    
 }
 .footer_img img{
     width: 450px;
-
-    height:auto;
-
 }
 .social_link{
     font-size: 32px;
@@ -166,55 +291,7 @@ footer{
     color: #969BAB;
     padding-left: 14px;
 }
-.newsletter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    
-}
-.newsletter_msg{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 70%;
-    height: 50vh;
-    background-color: #2D25A0;
-    color: white;
-    font-style: normal;
-    font-family: Poppins;
-}
-.newsletter_msg h2{
-    font-weight: 500;
-    font-size: 48px;
-}
-.newsletter_form{
-    width: 100%;
-    margin: 20px;
-}
-.newsletter_form input{
-    
-    text-align: center;
-    /* display: block; */
-    /* width: 100%; */
-    font-size: 25px;
-    
-    padding: 5px;
-    margin-right: 10px;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 0px 1px 15px 6px black;
-}
-.newsletter_form a{
-    text-decoration: none;
-    color: white;
-    background-color: #E02C6D;
-    width: 100%;
-    margin: 5px;
-    padding: 10px 24px;
-}
+
 .copyright h3{
     font-family: Poppins;
     font-style: normal;
