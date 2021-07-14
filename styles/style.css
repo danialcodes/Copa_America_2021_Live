@@ -7,7 +7,7 @@
     font-family: Poppins;
 }
 body{
-    max-width: 1375px;
+    width: 1375px;
     
 }
 a{
@@ -206,6 +206,11 @@ main{
     font-size: 3em;
     line-height: 60px;
 
+}
+.highlight_text p{
+    font-family: Poppins;
+    font-size: 1em;
+    line-height: 28px;
 }
 .highlight_img img{
     width: 450px;

@@ -1,12 +1,75 @@
-@media only screen and (max-height:480px) {
+@media only screen and (max-width: 360px) {
     body{
         width: 100%;
     }
-    .navbar{
-        display: hidden;
+    .watch_btn{
+        width: 10.5em;
+        height: 2.5em;
+        padding: 0.2em .2em;
     }
     header{
-        background-color: #ff032d;
+        padding: 2em 5em 2em 1em;
     }
+    .navbar{
+        display: none;
+    }
+    .header_banner{
+        flex-direction: column;
+    }
+    .banner_image img{
+        width: 329px;
+        height: 259.17px;
+        padding: 3em 1em 1em 4em;
+        
+    }
+    .banner_text{
+        width: 100%;
+        font-size: 2em;
+        line-height: 35px;
+        transition: transform .5s ease-in-out;
+    }
+    .banner_btn{
+        margin-top: 1em;
+    }
+    .players{
+        padding: 0 1em;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 2.5em;
+    }
+    .player{
+        width: 300px;
+        padding: 1em;
+        box-shadow: 0px 0px 40px 0px #00000026;
     
+    }
+    .highlights{
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        padding: 0 1em;
+    }
+    .highlight_text{
+    /* width: 469px; */
+    width: 300px;
+}
+.highlight_text h3{
+    font-size: 1.9em;
+    line-height: 60px;
+
+}
+.highlight_img img{
+    margin-top: 2em;
+    width: 328px;
+    height: 258px;
+}
+.newsletter{
+    display: none;
+}
+footer{
+    margin-bottom: 10em;
+}
+.footer_img img{
+    width: 330px;
+}
+
 }
