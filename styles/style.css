@@ -1,17 +1,26 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*-----------
+    Common CSS
+    --------- */
+:root{
+    --blue_bg : #2D25A0;
+    --btn_bg : #E02C6D;
+    --h3_black: #18191F;
+    --p_ash: #6C6C6C;
+}
 *{
     margin: 0;
     padding: 0;
     font-family: Poppins;
+    color: #FFFFFF;
 }
 body{
-    width: 1375px;
-    
+    width: 1375px;  
 }
 a{
-    color: #FFFFFF;
+
     text-decoration: none;
     
 }
@@ -19,7 +28,7 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #E02C6D;
+    background-color: var(--btn_bg);
     font-weight: 500;
     width: 10.5em;
     height: 2.5em;
@@ -31,7 +40,7 @@ a{
 header{
     /* height: 80vh; */
     padding: 3em 7em 3em 8em;
-    background-color: #2D25A0;
+    background-color: var(--blue_bg);
     
 }
 /*-----------
@@ -41,33 +50,28 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Poppins;
-    font-style: normal;
+
     font-weight: 500;
     font-size: 1em;
-    /* line-height: 24px; */
-    color: #FFFFFF;
     margin-bottom: 6.5em;
 }
 .nav_list>ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     list-style: none;
     /* width: 720px; */
     width: 35em;
 
 }
-/* .nav_list>ul>li>a{
-    color: #FFFFFF;
-    text-decoration: none;
 
-} */
 .login{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E02C6D;
+
+    background-color: var(--btn_bg);
     /* padding: 10px 24px; */
     padding: 0.5em 1.5em;
 }
@@ -98,18 +102,16 @@ header{
 .banner_image img{
     width: 555px;
     height: 446px;
-    transition: transform .5s ease-out;
-    
+    transition: transform .5s ease-out;   
 }
 .banner_text{
     /* width: 485px; */
     width: 7.5em;
-    color: #FFFFFF;
+    
     font-weight: 700;
     /* font-size: 64px; */
     font-size: 4em;
     line-height: 80px;
-    font-family: Poppins;
     transition: transform .5s ease-in-out;
 }
 .banner_btn{
@@ -127,7 +129,6 @@ header{
     --------- */
 main{
     margin-top: 4.5em;
-    /* padding: 0px 5em; */
 }
 /*-----------
     Section Players Start
@@ -156,22 +157,17 @@ main{
     height: 100%;
 }
 .player_info{
-    /* margin-top: 16px; */
     margin-top: 1em;
-    /* margin-right: 15px; */
     margin-right: 1em;
-    font-family: Poppins;
 }
 .player_info h3{
-    color: #18191F;
+    color: var(--h3_black);
     font-weight: 700;
-    /* font-size: 28px; */
     font-size: 1.75em;
-    /* margin-bottom: 10px; */
     margin-bottom: .7em;
 }
 .player_info p{
-    color: #6C6C6C;
+    color: var(--p_ash);
     /* font-size: 16px; */
     font-size: 1em;
     /* line-height: 26px; */
@@ -190,7 +186,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: Poppins;
+
     padding: 0 2em 0 5em;
     margin-bottom: 10.5em;
 }
@@ -199,7 +195,7 @@ main{
     width: 30em;
 }
 .highlight_text h3{
-    
+    color: var(--h3_black);
     margin-bottom: 1em;
     font-weight: 700;
     /* font-size: 48px; */
@@ -208,7 +204,7 @@ main{
 
 }
 .highlight_text p{
-    font-family: Poppins;
+    color: var(--p_ash);
     font-size: 1em;
     line-height: 28px;
 }
@@ -222,6 +218,7 @@ main{
 /*-----------
     Section Highlight End
     --------- */
+
 /*-----------
     Section Newsletter Start
     --------- */
@@ -241,9 +238,7 @@ main{
         
         /* padding: 4em; */
         padding: 4em 4em 2em 4em;
-        background-color: #2D25A0;
-        color: white;
-        font-family: Poppins;
+        background-color: var(--blue_bg);
         border-radius: 2em;
     }
     .newsletter_msg h3{
@@ -258,9 +253,7 @@ main{
     }
 
     .newsletter_form input{
-        
         font-size: 1em;
-        
         padding: 1em;
         margin-right: 10px;
         border-radius: 10px;
@@ -269,7 +262,7 @@ main{
     }
     .newsletter_form a{
         margin: 5px;
-        background-color: #E02C6D;
+        background-color: var(--btn_bg);
         font-weight: 500;
         width: 10.5em;
         height: 2.5em;
@@ -279,6 +272,7 @@ main{
 /*-----------
     Section Newsletter End
     --------- */
+
 /*-----------
     Menu End
     --------- */
@@ -290,6 +284,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     margin-top: 10.5em;
     margin-bottom: 4em;
     
@@ -308,8 +303,7 @@ footer{
 }
 
 .copyright h3{
-    font-family: Poppins;
-    font-style: normal;
+    color: var(--h3_black);
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
