@@ -37,6 +37,8 @@
       transform: translate3d(-1px, 4px, 0);
     }
   }
+
+
 /*-----------
     Common CSS
     --------- */
@@ -53,7 +55,7 @@
     color: #FFFFFF;
 }
 body{
-    width: 1375px;  
+    width: 100%;  
 }
 a{
 
@@ -154,7 +156,7 @@ header{
     transition: transform .5s ease-in;
 }
 /*-----------
-    Banner Start
+    Banner End
     --------- */
 /*-----------
     Header End
@@ -253,6 +255,59 @@ main{
 }
 /*-----------
     Section Highlight End
+    --------- */
+
+/*-----------
+    Section Match info Start
+    --------- */
+.matches{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin:0px 5em;
+    margin-bottom: 10.5em;
+    text-align: center;
+    grid-gap: 2em 2em;
+}
+.match_header{
+    background-color: var(--blue_bg);
+    border-radius: 1em;
+}
+.match_header h3{
+    padding: .2em 0 0 0;
+    margin-bottom: .1em;
+    font-size: 3em;
+    color: white;
+}
+.matches h3{
+    font-weight: 700;
+}
+.match_info{
+    background-color: var(--btn_bg);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2em 9em;
+    padding: 1em 5em;
+    border-radius: 1em;
+}
+.match{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px;
+    box-shadow: white;
+    border-radius: 12px;
+    box-shadow: -1px -2px 5px 2px #5d3232;
+}
+.match h3{
+    color: var(--h3_black);
+    padding: 5px 0;
+}
+.match_time h4,.match_time p{
+    font-weight: 400;
+
+}
+/*-----------
+    Section Match info End
     --------- */
 
 /*-----------
